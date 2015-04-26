@@ -3,22 +3,25 @@
 	<title>My site - MobFox</title>
 	<script src='http://my.mobfox.com/ad.js'></script> 
 	
-	<style>
-	#adContainer {
-		position: fixed;
-		bottom: 6px;
-		left: calc(50% - 160px);
-		height: 50px;
-		width: 320px;
-		z-index: 99;
-		background-color: #333333;
-		border-style: solid;
-		border-color: #999999;
-	  }
-	  </style>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+		<style>
+			body { 
+				background-color: #333333; 
+				margin: 0px; 
+				padding: 0px; 
+				cursor: pointer; 
+				-ms-user-select: none; 
+				overflow: hidden; 
+				-ms-content-zooming: none; 
+				-ms-scroll-limit: 0px; 
+				-ms-touch-select: none; 
+				-ms-touch-action: none; 
+			}
+		</style>
+
+		<base target="_blank">
 </head>
 <body>
-	<div id="adContainer">
 	<script>
 		RequestAd_({
 
@@ -33,7 +36,5 @@
 		trackingpixelurl:'' <!-- Ping a Tracking Pixel everytime an ad is shown. -->
 		});
 	</script>
-
-	</div>
 </body>
 </html>
